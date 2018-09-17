@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>myFirst1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Context -->
+  <context-param>
+  <param-name>Roll</param-name>
+  <param-value>10000</param-value>
+  </context-param>
+  <!-- Config -->
+  <init-param>
+  <param-name>fax</param-name>
+  <param-value>747474</param-value>
+  </init-param>
+  <servlet>
+    <description></description>
+    <display-name>student</display-name>
+    <servlet-name>student</servlet-name>
+    <servlet-class>master.student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>student2</display-name>
+    <servlet-name>student2</servlet-name>
+    <servlet-class>master.student2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>student2</servlet-name>
+    <url-pattern>/student2</url-pattern>
+  </servlet-mapping>
+</web-app>
